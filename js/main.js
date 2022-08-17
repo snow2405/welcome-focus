@@ -20,7 +20,7 @@ function showTime() {
   //hour = hour % 12 || 12;
 
   //output 
-  time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)}`;
+  time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}`;
 
   setTimeout(showTime, 1000);
 
@@ -41,7 +41,7 @@ function setup() {
     greeting.textContent = 'Good Morning';
     document.body.style.color = 'white';
 
-  } else if (hour < 18) {
+  } else if (hour < 20) {
     document.body.style.backgroundImage = "url('/welcome-focus/img/afternoon.jpg')";
     title.textContent = 'Good Afternoon';
     greeting.textContent = 'Good Afternoon';
