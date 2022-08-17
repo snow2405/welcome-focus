@@ -20,6 +20,8 @@ function showTime(){
     time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)}`;
 
     setTimeout(showTime, 1000);
+
+    console.log ("executed function");
 }
 
 function addZero(n){
