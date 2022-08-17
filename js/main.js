@@ -29,7 +29,7 @@ function addZero(n){
 }
 
 
-/*function setup(){
+function setup(){
   let today = new Date(),
     hour = today.getHours();
 
@@ -46,7 +46,7 @@ function addZero(n){
   }
 
 }
-*/
+
 
 showTime();
-//setup();
+setup();
