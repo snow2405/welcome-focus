@@ -39,16 +39,19 @@ function setup() {
     document.body.style.backgroundImage = "url('/welcome-focus/img/morning.jpg')";
     title.textContent = 'Good Morning';
     greeting.textContent = 'Good Morning';
+    document.body.style.color = 'white';
 
   } else if (hour < 18) {
     document.body.style.backgroundImage = "url('/welcome-focus/img/afternoon.jpg')";
     title.textContent = 'Good Afternoon';
     greeting.textContent = 'Good Afternoon';
+    document.body.style.color = 'black';
   } else {
     document.body.style.backgroundImage = "url('/welcome-focus/img/evening.jpg')";
   
     title.textContent = 'Good Evening';
     greeting.textContent = 'Good Evening';
+    document.body.style.color = 'white';
   }
 
 }
