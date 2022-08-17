@@ -47,4 +47,5 @@ function setup(){
 
 }
 
+setup();
 showTime();
