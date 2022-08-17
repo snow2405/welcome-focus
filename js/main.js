@@ -67,6 +67,17 @@ function setName(e){
   }
 }
 
+function setFocus(e){
+  if(e.type == 'keypress'){
+    if(e.which == 13 || e.keyCode == 13){
+      localStorage.setItem('focus', e.target.innerHTML);
+      focus.blur();
+    }
+  }else{
+    localStorage.setItem('focus', e.target.innerHTML);
+  }
+}
+
 function getName(){
   if(localStorage.getItem('name') == null){
     name.textContent = '[Enter Name]';
@@ -76,9 +87,24 @@ function getName(){
 
 }
 
+function getFocus(){
+  if(localStorage.getItem('focus') == null){
+    focus.textContent = '[Enter Goal]';
+  }else{
+    focus.textContent = localStorage.getItem('focus');
+  }
+
+}
+
+
 name.addEventListener('keypress', setName);
 name.addEventListener('blur', setName);
+
+focus.addEventListener('keypress', setFocus);
+focus.addEventListener('blur', setFocus);
+
 
 showTime();
 setup();
 getName();
+getFocus();
