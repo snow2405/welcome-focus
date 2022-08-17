@@ -36,14 +36,14 @@ function getWorldTime(){
   h = currentTime.getUTCHours(),
   m = currentTime.getUTCMinutes(),
   s = currentTime.getUTCSeconds();
-  console.log(h + m + s);
+ 
  //-5, 0 , + 1, + 2, +9
 
-  ny.innerHTML = `${addZero(h)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  ny.innerHTML = `${addZero(h-5)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
   ld.innerHTML = `${addZero(h)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
-  zh.innerHTML = `${addZero(h)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
-  kv.innerHTML = `${addZero(h)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
-  tk.innerHTML = `${addZero(h)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  zh.innerHTML = `${addZero(h+1)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  kv.innerHTML = `${addZero(h+2)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  tk.innerHTML = `${addZero(h+9)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
 
 
   setTimeout(getWorldTime, 1000);
