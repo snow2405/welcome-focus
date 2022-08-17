@@ -35,13 +35,13 @@ function setup() {
   let today = new Date(),
     hour = today.getHours();
 
-  if (hour < 20) {
+  if (hour < 12) {
     document.body.style.backgroundImage = "url('/welcome-focus/img/morning.jpg')";
     title.textContent = 'Good Morning';
     greeting.textContent = 'Good Morning';
     document.body.style.color = 'white';
 
-  } else if (hour < 21) {
+  } else if (hour < 18) {
     document.body.style.backgroundImage = "url('/welcome-focus/img/afternoon.jpg')";
     title.textContent = 'Good Afternoon';
     greeting.textContent = 'Good Afternoon';
