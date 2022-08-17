@@ -45,7 +45,7 @@ function setup() {
     title.textContent = 'Good Afternoon';
     greeting.textContent = 'Good Afternoon';
   } else {
-    document.body.style.backgroundImage = "url('lionsix.ch/welcome-focus/img/morning.jpg')";
+    document.body.style.backgroundImage = "url('/img/morning.jpg')";
     console.log("this gets logged");
     title.textContent = 'Good Evening';
     greeting.textContent = 'Good Evening';
