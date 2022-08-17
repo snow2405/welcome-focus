@@ -32,9 +32,10 @@ function showTime() {
 }
 
 function getWorldTime(){
-  let h = currentTime.getUTCHours();
-  let m = currentTime.getUTCMinutes();
-  let s = currentTime.getUTCSeconds();
+  let currentTime = new Date(), 
+  h = currentTime.getUTCHours(),
+  m = currentTime.getUTCMinutes(),
+  s = currentTime.getUTCSeconds();
   console.log(h + m + s);
  //-5, 0 , + 1, + 2, +9
 
