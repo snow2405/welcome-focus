@@ -22,9 +22,6 @@ function showTime(){
 
     setTimeout(showTime, 1000);
 
-
-    console.log("test commit");
-    
 }
 
 function addZero(n){
