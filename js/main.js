@@ -8,6 +8,11 @@ const time = document.getElementById('time'),
   title = document.getElementById('title'),
   focus = document.getElementById('focus');
 
+  ny = document.getElementById('newyork');
+  ld = document.getElementById('london');
+  zh = document.getElementById('zurich');
+  kv = document.getElementById('kyiv');
+  tk = document.getElementById('tokyo');
 //Show Time
 
 function showTime() {
@@ -24,6 +29,16 @@ function showTime() {
 
   setTimeout(showTime, 1000);
 
+}
+
+function getWorldTime(){
+  var h = currentTime.getUTCHours();
+  var m = currentTime.getUTCMinutes();
+
+ 
+  ny.innerHTML = `${addZero(h)-5}<span>:</span>${addZero(m)}`;
+  ld.innerHTML = `${addZero(h)}<span>:</span>${addZero(m)}`;
+  
 }
 
 function addZero(n) {
