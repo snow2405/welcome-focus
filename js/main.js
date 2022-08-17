@@ -34,10 +34,13 @@ function showTime() {
 function getWorldTime(){
   var h = currentTime.getUTCHours();
   var m = currentTime.getUTCMinutes();
-
+  var s = currentTime.getUTCSeconds();
  
-  ny.innerHTML = `${addZero(h)-5}<span>:</span>${addZero(m)}`;
-  ld.innerHTML = `${addZero(h)}<span>:</span>${addZero(m)}`;
+  ny.innerHTML = `${addZero(h)-5}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  ld.innerHTML = `${addZero(h)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  zh.innerHTML = `${addZero(h)+1}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  kv.innerHTML = `${addZero(h)+2}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  tk.innerHTML = `${addZero(h)+9}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
   
 }
 
@@ -119,6 +122,7 @@ focus.addEventListener('keypress', setFocus);
 focus.addEventListener('blur', setFocus);
 
 
+getWorldTime();
 showTime();
 setup();
 getName();
