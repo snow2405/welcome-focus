@@ -3,6 +3,7 @@
 const time = document.getElementById('time'),
 greeting = document.getElementById('greeting'),
 name = document.getElementById('name'),
+title = document.getElementById('title'),
 focuse = document.getElementById('focus');
 
 //Show Time
@@ -21,11 +22,28 @@ function showTime(){
 
     setTimeout(showTime, 1000);
 
-    console.log ("executed function");
+    
 }
 
 function addZero(n){
     return (parseInt(n, 10) < 10 ? '0' : '') + n;
+}
+
+
+function setup(){
+  let today = new Date(),
+    hour = today.getHours();
+
+  if(hour < 12){
+    document.body.style.backgroundImage = "url('../img/morning.jpg')";
+    title.textContent = greeting.textContent = 'Good Morning';
+   
+  }else if (hour < 18){
+    title.textContent = greeting.textContent = 'Good Morning';
+  }else{
+
+  }
+
 }
 
 showTime();
