@@ -3,8 +3,8 @@
 const time = document.getElementById('time'),
 greeting = document.getElementById('greeting'),
 name = document.getElementById('name'),
-title = document.getElementById('title'),
-focuse = document.getElementById('focus');
+//title = document.getElementById('title'),
+focus = document.getElementById('focus');
 
 //Show Time
 
@@ -35,11 +35,11 @@ function setup(){
 
   if(hour < 12){
  //   document.body.style.backgroundImage = "url('../img/morning.jpg')";
-    title.textContent = 'Good Morning';
+  //  title.textContent = 'Good Morning';
     greeting.textContent = 'Good Morning';
    
   }else if (hour < 18){
-    title.textContent = 'Good Morning';
+  //  title.textContent = 'Good Morning';
     greeting.textContent = 'Good Morning';
   }else{
 
