@@ -36,17 +36,17 @@ function setup() {
     hour = today.getHours();
 
   if (hour < 12) {
-    document.body.style.backgroundImage = "url('../img/morning.jpg')";
+    document.body.style.backgroundImage = "url('/welcome-focus/img/morning.jpg')";
     title.textContent = 'Good Morning';
     greeting.textContent = 'Good Morning';
 
   } else if (hour < 18) {
-    document.body.style.backgroundImage = "url('../img/morning.jpg')";
+    document.body.style.backgroundImage = "url('/welcome-focus/img/afternoon.jpg')";
     title.textContent = 'Good Afternoon';
     greeting.textContent = 'Good Afternoon';
   } else {
-    document.body.style.backgroundImage = "url('/welcome-focus/img/morning.jpg')";
-    console.log("this gets logged");
+    document.body.style.backgroundImage = "url('/welcome-focus/img/evening.jpg')";
+  
     title.textContent = 'Good Evening';
     greeting.textContent = 'Good Evening';
   }
