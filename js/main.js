@@ -35,11 +35,13 @@ function setup(){
     hour = today.getHours();
 
   if(hour < 12){
-    document.body.style.backgroundImage = "url('../img/morning.jpg')";
-    title.textContent = greeting.textContent = 'Good Morning';
+ //   document.body.style.backgroundImage = "url('../img/morning.jpg')";
+    title.textContent = 'Good Morning';
+    greeting.textContent = 'Good Morning';
    
   }else if (hour < 18){
-    title.textContent = greeting.textContent = 'Good Morning';
+    title.textContent = 'Good Morning';
+    greeting.textContent = 'Good Morning';
   }else{
 
   }
