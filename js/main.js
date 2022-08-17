@@ -8,11 +8,11 @@ const time = document.getElementById('time'),
   title = document.getElementById('title'),
   focus = document.getElementById('focus');
 
-  ny = document.getElementById('newyork');
+/*  ny = document.getElementById('newyork');
   ld = document.getElementById('london');
   zh = document.getElementById('zurich');
   kv = document.getElementById('kyiv');
-  tk = document.getElementById('tokyo');
+  tk = document.getElementById('tokyo');*/
 //Show Time
 
 function showTime() {
@@ -31,7 +31,7 @@ function showTime() {
 
 }
 
-function getWorldTime(){
+/*function getWorldTime(){
   let currentTime = new Date(), 
   h = currentTime.getUTCHours(),
   m = currentTime.getUTCMinutes(),
@@ -39,7 +39,7 @@ function getWorldTime(){
  
  //-5, 0 , + 1, + 2, +9
 
-  ny.innerHTML = `${addZero((h-22)%24)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  ny.innerHTML = `${addZero((h+19)%24)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
   ld.innerHTML = `${addZero((h)%24)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
   zh.innerHTML = `${addZero((h+1)%24)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
   kv.innerHTML = `${addZero((h+2)%24)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
@@ -48,7 +48,7 @@ function getWorldTime(){
 
   setTimeout(getWorldTime, 1000);
   
-}
+}*/
 
 function addZero(n) {
   return (parseInt(n, 10) < 10 ? '0' : '') + n;
@@ -128,7 +128,7 @@ focus.addEventListener('keypress', setFocus);
 focus.addEventListener('blur', setFocus);
 
 
-getWorldTime();
+//getWorldTime();
 showTime();
 setup();
 getName();
