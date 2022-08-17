@@ -1,5 +1,7 @@
 //DOM ELEMENTS
 
+
+
 const time = document.getElementById('time'),
   greeting = document.getElementById('greeting'),
   name = document.getElementById('name'),
@@ -44,6 +46,7 @@ function setup() {
     greeting.textContent = 'Good Afternoon';
   } else {
     document.body.style.backgroundImage = "url('../img/morning.jpg')";
+    console.log("this gets logged");
     title.textContent = 'Good Evening';
     greeting.textContent = 'Good Evening';
   }
