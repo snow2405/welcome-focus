@@ -18,8 +18,8 @@ const time = document.getElementById('time'),
 function showTime() {
   let today = new Date(),
     hour = today.getHours(),
-    min = today.getMinutes(),
-    sec = today.getSeconds();
+    min = today.getMinutes();
+   // sec = today.getSeconds();
 
   //const amPm = hour >= 12 ? 'PM' : 'AM';
   //hour = hour % 12 || 12;
@@ -36,11 +36,14 @@ function getWorldTime(){
   var m = currentTime.getUTCMinutes();
   var s = currentTime.getUTCSeconds();
  
-  ny.innerHTML = `${addZero(h)-5}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  ny.innerHTML = `${addZero(h-5)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
   ld.innerHTML = `${addZero(h)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
-  zh.innerHTML = `${addZero(h)+1}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
-  kv.innerHTML = `${addZero(h)+2}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
-  tk.innerHTML = `${addZero(h)+9}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  zh.innerHTML = `${addZero(h+1)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  kv.innerHTML = `${addZero(h+2)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+  tk.innerHTML = `${addZero(h+9)}<span>:</span>${addZero(m)}<span>:</span>${addZero(s)}`;
+
+
+  setTimeout(getWorldTime, 1000);
   
 }
 
