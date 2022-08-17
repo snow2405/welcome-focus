@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Grenze&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <title id="title">Focus</title>
-    </head>
 
-    <body>
-        <time id="time">00:00</time>
-        
-       
-        <time id="newyork">00:00</time>
-        <time id="london">00:00</time>
-        <time id="zurich">00:00</time>
-        <time id="kyiv">00:00</time>
-        <time id="tokyo">00:00</time>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <h1>
-            <span id="greeting">Good Afternoon</span>
-            <span id="name" contenteditable="true">>USER</span>
-        </h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title id="title">Focus</title>
+</head>
 
-        <h2>What is Your Focus For Today?</h2>
-        <h2 id="focus" contenteditable="true">TASK</h2>
+<body>
+    <time id="time">00:00</time>
+
+    <table>
+        <tr>
+            <th><time id="newyork">00:00</time></th>
+            <th><time id="london">00:00</time></th>
+            <th><time id="zurich">00:00</time></th>
+            <th><time id="kyiv">00:00</time></th>
+            <th><time id="tokyo">00:00</time></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
 
 
-        <script src="js/main.js"></script>
+    <h1>
+        <span id="greeting">Good Afternoon</span>
+        <span id="name" contenteditable="true">>USER</span>
+    </h1>
 
-    </body>
+    <h2>What is Your Focus For Today?</h2>
+    <h2 id="focus" contenteditable="true">TASK</h2>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
